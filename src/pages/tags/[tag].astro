@@ -1,0 +1,47 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import EntriesOne from "@/components/entries/EntriesOne.astro";
+import { getCollection } from "astro:content";
+export async function getStaticPaths() {
+  const allPosts = await getCollection("posts");
+  const uniqueTags = [
+    ...new Set(allPosts.map((post) => post.data.tags).flat()),
+  ];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post) =>
+      post.data.tags.includes(tag)
+    );
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+---
+
+<BaseLayout pageTitle={tag}>
+  <section>
+    <div class="px-8 md:px-12 mx-auto max-w-7xl py-12 lg:py-32">
+      <ul
+        class="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-x-3 gap-y-24 lg:gap-x-6">
+        {
+          posts.map((post) => (
+            <EntriesOne
+              url={"/posts/" + post.slug}
+              title={post.data.title}
+              description={post.data.description}
+              alt={post.data.title}
+              pubDate={post.data.pubDate.toString().slice(0, 10)}
+              author={post.data.author}
+              image={post.data.image.url}
+            />
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
