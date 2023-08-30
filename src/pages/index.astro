@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Hero from "@/components/landing/Hero.astro";
+import Work from "@/components/landing/Work.astro";
+import Intro from "@/components/landing/Intro.astro";
+import Services from "@/components/landing/Services.astro";
+import Cta from "@/components/landing/Cta.astro";
 import { AstroSeo } from "@astrolib/seo";
 ---
 
-<!---
-Use AstroSeo in all the pages you want different Seo than the index page
--->
 <AstroSeo
   title="Title"
   description="Your site description goes here"
@@ -43,4 +44,8 @@ Use AstroSeo in all the pages you want different Seo than the index page
 />
 <BaseLayout>
   <Hero />
+  <Work />
+  <Intro />
+  <Services />
+  <Cta />
 </BaseLayout>

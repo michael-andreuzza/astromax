@@ -5,17 +5,26 @@
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
 }
-
-:root {
-  --astro-code-color-text: #000000;
-  --astro-code-color-background: #ffffff;
-  --astro-code-token-constant: #00000080;
-  --astro-code-token-string: #00000050;
-  --astro-code-token-comment: #00000060;
-  --astro-code-token-keyword: black;
-  --astro-code-token-parameter: #ffffff;
-  --astro-code-token-function: black;
-  --astro-code-token-string-expression: #fe351b;
-  --astro-code-token-punctuation: #ffffff;
-  --astro-code-token-link: #ffffff;
+/* CSS */
+:root { font-family: 'Helvetica', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Helvetica var', sans-serif; }
 }
+@font-face {
+  font-family: "Basement";
+  src: url("../fonts/BSBlack.eot");
+  src: url("../fonts/BSBlack.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BSBlack.woff2") format("woff2"),
+    url("../fonts/BSBlack.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  descent-override: 0%;
+}
+.gradient-grid  {
+
+background-image: radial-gradient(circle at center center, transparent 0%,rgba(255,255,255, 0) 99%),repeating-linear-gradient(0deg, rgba(205,205,205, 0.2) 0px, rgba(205,205,205, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(205,205,205, 0.2) 0px, rgba(205,205,205, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgba(255,255,255, 0),rgba(255,255,255, 0));
+}
+
+/*.splide__pagination {
+  visibility: hidden;
+}*/

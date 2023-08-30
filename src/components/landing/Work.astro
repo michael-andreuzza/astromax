@@ -1,0 +1,266 @@
+<section class="border-b border-white bg-accent-500">
+  <div class="mx-auto max-w-7xl border-x border-white px-8 py-12 gradient-grid">
+    <div class="mx-auto">
+      <h3 class="text-3xl font-display text-white uppercase">
+        Designed and developed websites at AstroMax
+      </h3>
+    </div>
+  </div>
+</section>
+<section class="border-b border-white bg-accent-500">
+  <div
+    class="mx-auto max-w-7xl border-white border-x"
+    x-data="{ init() {
+            new Splide(this.$refs.splide, {
+
+                perPage: 5,
+                gap: '0rem',
+                breakpoints: {
+                    640: {
+                        perPage: 1,
+                    },
+                },
+
+            }).mount()
+        },
+    }">
+    <section
+      class="splide is-initialized splide--slide splide--ltr splide--draggable is-active"
+      aria-label="Splide/Alpine.js"
+      x-ref="splide"
+      id="splide01"
+      aria-roledescription="carousel">
+      <div class="splide__arrows splide__arrows--ltr items-center">
+        <button
+          class="splide__arrow splide__arrow--prev"
+          type="button"
+          aria-label="Previous slide"
+          aria-controls="splide01-track"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 40"
+            width="40"
+            height="40"
+            focusable="false"
+            ><path
+              d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+            ></path></svg
+          ></button
+        >
+        <button
+          class="splide__arrow splide__arrow--next"
+          type="button"
+          disabled=""
+          aria-label="Next slide"
+          aria-controls="splide01-track"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 40"
+            width="40"
+            height="40"
+            focusable="false"
+            ><path
+              d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+            ></path></svg
+          ></button
+        >
+      </div>
+      <div
+        class="h-full splide__track splide__track--slide splide__track--ltr splide__track--draggable"
+        id="splide01-track"
+        style="padding-left: 0px; padding-right: 0px;"
+        aria-live="polite"
+        aria-atomic="true"
+        aria-busy="false">
+        <ul
+          class="splide__list"
+          id="splide01-list"
+          role="presentation"
+          style="transform: translateX(-2040px);">
+          <li
+            class="flex justify-center flex-col splide__slide is-prev"
+            id="splide01-slide03"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="3 of 4"
+            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
+            aria-hidden="true">
+            <img
+              alt="placeholder image"
+              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              src="/work/1.png"
+            />
+            <div
+              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white">
+              <span class="block font-semibold">Project 1</span>
+            </div>
+          </li>
+          <li
+            class="flex justify-center flex-col splide__slide"
+            id="splide01-slide01"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="1 of 4"
+            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
+            aria-hidden="true">
+            <img
+              alt="placeholder image"
+              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              src="/work/2.png"
+            />
+            <div
+              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white">
+              <span class="block font-semibold">Project 2</span>
+            </div>
+          </li>
+          <li
+            class="flex justify-center flex-col splide__slide is-prev"
+            id="splide01-slide03"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="3 of 4"
+            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
+            aria-hidden="true">
+            <img
+              alt="placeholder image"
+              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              src="/work/3.png"
+            />
+            <div
+              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white">
+              <span class="block font-semibold">Project 3</span>
+            </div>
+          </li>
+          <li
+            class="flex justify-center flex-col splide__slide is-prev"
+            id="splide01-slide03"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="3 of 4"
+            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
+            aria-hidden="true">
+            <img
+              alt="placeholder image"
+              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              src="/work/4.png"
+            />
+            <div
+              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white">
+              <span class="block font-semibold">Project 4</span>
+            </div>
+          </li>
+
+          <li
+            class="flex justify-center flex-col splide__slide"
+            id="splide01-slide02"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="2 of 4"
+            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
+            aria-hidden="true">
+            <img
+              alt="placeholder image"
+              class="w-full object-cover object-center bg-white border-t border-black"
+              src="/work/5.png"
+            />
+            <div
+              class="text-white text-xs order-first p-3 text-center lg:border-black">
+              <span class="block font-semibold">Project 5</span>
+            </div>
+          </li>
+
+          <li
+            class="flex justify-center flex-col splide__slide"
+            id="splide01-slide02"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="2 of 4"
+            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
+            aria-hidden="true">
+            <img
+              alt="placeholder image"
+              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              src="/work/6.png"
+            />
+            <div
+              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white">
+              <span class="block font-semibold">Project 6</span>
+            </div>
+          </li>
+          <li
+            class="flex justify-center flex-col splide__slide"
+            id="splide01-slide02"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="2 of 4"
+            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
+            aria-hidden="true">
+            <img
+              alt="placeholder image"
+              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              src="/work/7.png"
+            />
+            <div
+              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white">
+              <span class="block font-semibold">Project 7</span>
+            </div>
+          </li>
+          <li
+            class="flex justify-center flex-col splide__slide"
+            id="splide01-slide02"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="2 of 4"
+            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
+            aria-hidden="true">
+            <img
+              alt="placeholder image"
+              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              src="/work/8.png"
+            />
+            <div
+              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white">
+              <span class="block font-semibold">Project 8</span>
+            </div>
+          </li>
+          <li
+            class="flex justify-center flex-col splide__slide"
+            id="splide01-slide02"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="2 of 4"
+            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
+            aria-hidden="true">
+            <img
+              alt="placeholder image"
+              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
+              src="/work/9.png"
+            />
+            <div
+              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white">
+              <span class="block font-semibold">Project 9</span>
+            </div>
+          </li>
+          <li
+            class="flex justify-center flex-col splide__slide"
+            id="splide01-slide02"
+            role="tabpanel"
+            aria-roledescription="slide"
+            aria-label="2 of 4"
+            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
+            aria-hidden="true">
+            <img
+              alt="placeholder image"
+              class="w-full object-cover object-center bg-white border-t border-black"
+              src="/work/10.png"
+            />
+            <div
+              class="text-white text-xs order-first p-3 text-center lg:border-black">
+              <span class="block font-semibold">Project 10</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</section>
