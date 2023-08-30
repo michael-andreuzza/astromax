@@ -13,8 +13,8 @@
   "dependencies": {
     "@astrojs/preact": "^2.2.2",
     "@astrojs/sitemap": "^2.0.2",
-    "@astrojs/tailwind": "^4.0.0",
-    "astro": "^2.10.14",
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^3.0.2",
     "install": "^0.13.0",
     "npm": "^9.8.1",
     "preact": "^10.17.1",
