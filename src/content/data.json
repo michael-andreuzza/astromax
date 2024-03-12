@@ -1,0 +1,26 @@
+{
+    "projects": [
+      {
+        "tituloProyecto": "Vextre",
+        "id": "vextre",
+        "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v1.jpg",
+        "img1": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v2.jpg",
+        "img2": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v3.jpg",
+        "img3": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v4.jpg",
+        "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v5.jpg",
+        "link": "https://vextre.org",
+        "year": "2021",
+        "description": "VEXTRE is an augmented reality project that visualizes the socio-economic situation of Extremadura, Spain related to each town and city. \n\n The project also contains data visualization in a map."
+      }, {
+        "tituloProyecto": "Vextre2",
+        "id": "vextre",
+        "imgcover": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v1.jpg",
+        "img1": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v2.jpg",
+        "img2": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v3.jpg",
+        "img3": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v4.jpg",
+        "img4": "https://cdn.glitch.global/73328f88-61cf-4354-9bf0-e9f5ac194e9f/v5.jpg",
+        "link": "https://vextre.org",
+        "year": "2021",
+        "description": "VEXTRE is an augmented reality project that visualizes the socio-economic situation of Extremadura, Spain related to each town and city. \n\n The project also contains data visualization in a map."
+      }]
+    }
