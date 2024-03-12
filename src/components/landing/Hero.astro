@@ -3,24 +3,30 @@ import Banner from "@/components/landing/Banner.astro";
 import Testimonials from "@/components/landing/Testimonials.astro";
 ---
 
-<section class="border-white/20  border-b ">
-  <div class="mx-auto border-white/20  border-x max-w-7xl">
+<section class="border-white/20  border-b h-screen ">
+  <div class="mx-auto border-white/20 h-full border-x max-w-7xl">
     <div class="mx-auto">
-    <h1 class="absolute p-4 lg:pt-28 lg:m-5 text-white font-display uppercase text-3xl lg:text-7xl">
-          Amplía tu repertorio artístico con herramientas tecnológicas de vanguardia y potencia tu creatividad digital
-        </h1>
+    <div class="absolute p-4 lg:pt-56 lg:m-10 ">
+         <h1 class="w-4/5 text-white font-display uppercase text-3xl lg:text-5xl"> Amplía tu repertorio artístico con herramientas tecnológicas de vanguardia y potencia tu creatividad digital</h1>
+          <p class="w-4/5 text-white  mt-5 ">SINESTESIA es un laboratorio transdisciplinario de Experimentación, Improvisación y Nuevos Medios que conecta personas interesadas en las tecnociencias, el arte y la cultura digital. Nuestras colaboraciones se llevan a cabo en escenarios intervenidos digitalmente, donde se promueve el intercambio de conocimientos y la improvisación en artes escénicas, musicales y visuales, haciendo uso de tecnologías multimedia abiertas y de libre uso </p>
+        </div>
+        
       <!--canvas id="myCanvas" class=" rounded-lg mx-auto   md:px-8 md:py-12 h-screen">
       
         
       </canvas-->
-      <img class="w-full" src="https://artlabpro.net/wp-content/uploads/2024/01/ARTLAB-ACADEMY-Tomas-Garcia-Objetos-4-uai-1024x682.jpg">
-      <!--Banner /-->
-      <div></div>
+      <img class="w-full object-cover h-full" src="https://artlabpro.net/wp-content/uploads/2024/01/ARTLAB-ACADEMY-Tomas-Garcia-Objetos-4-uai-1024x682.jpg">
+      <Banner/>
+      
       <Testimonials />
     </div>
   </div>
+  <!--canvas id="myCanvas" class=" rounded-lg mx-auto   md:px-8 md:py-12 h-screen">
+      
+        
+      </canvas-->
 </section>
-<script is:inline src="https://unpkg.com/hydra-synth"></script>
+<!--script is:inline src="https://unpkg.com/hydra-synth"></script>
 <script is:inline>
       var hydra = new Hydra({
         canvas: document.getElementById("myCanvas"),
@@ -30,4 +36,4 @@ import Testimonials from "@/components/landing/Testimonials.astro";
         .color(0.85,1.00,0.10).saturate(4).modulate(o0,0.053)
         .modulate(noise(2, 0.07), () => mouse.x / 600).scale(1).blend(o0,0.8).blend(o0,0.4)
         .blend(o0,0.2).modulate(o0,0.04)).out();
-    </script>
+    </script-->
