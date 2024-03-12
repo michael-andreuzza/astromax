@@ -42,3 +42,15 @@ background-image: radial-gradient(circle at center center, transparent 0%,rgba(2
 /*.splide__pagination {
   visibility: hidden;
 }*/
+
+
+.h15vh {
+  height: 150vh;
+}
+
+@media screen and (max-width: 480px) {
+  /* Your styles for small phones here */
+  .h15vh {
+    height: 200vh;
+  }
+}
