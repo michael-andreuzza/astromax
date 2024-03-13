@@ -51,6 +51,6 @@ background-image: radial-gradient(circle at center center, transparent 0%,rgba(2
 @media screen and (max-width: 480px) {
   /* Your styles for small phones here */
   .h15vh {
-    height: 200vh;
+    height: 250vh;
   }
 }
