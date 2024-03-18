@@ -2,38 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 /* CSS */
-:root {
-  font-family: Inter, sans-serif;
-  font-feature-settings:
-  "liga" 1,
-  "calt" 1, /* Contextual Alternates */
-  "dlig" 1, /* Discretionary Ligatures */
-  "ss07" 1, /* fSquare punctuation */
-  "ss08" 1, /* Square quotes */
-  "zero" 1, /* Slashed zero */
-  "tnum" 1, /* Tabular numbers */
-    "cv03", /* Open six */
-    "cv04" 1, /* Open nine */
-    "cv01" 1, /* Alternate one */
-    "cv09", /* Flat-top three */
-    "cv02" 1; /* Open 4 */
-}
-@supports (font-variation-settings: normal) {
-  /* Use variable font if supported */
-  :root {
-    font-family: InterVariable, sans-serif;
-  }
-}
-@font-face {
-  font-family: "Basement";
-  src: url("../fonts/BSBlack.eot");
-  src: url("../fonts/BSBlack.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/BSBlack.woff2") format("woff2"),
-    url("../fonts/BSBlack.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  descent-override: 0%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .gradient-grid  {
 background-image: radial-gradient(circle at center center, transparent 0%,rgba(255,255,255, 0) 99%),repeating-linear-gradient(0deg, rgba(205,205,205, 0.2) 0px, rgba(205,205,205, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(205,205,205, 0.2) 0px, rgba(205,205,205, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgba(255,255,255, 0),rgba(255,255,255, 0));
 }
@@ -43,7 +15,14 @@ background-image: radial-gradient(circle at center center, transparent 0%,rgba(2
 }*/
 
 body {
-  background:#0000;
+  background:black;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .h15vh {
@@ -53,6 +32,6 @@ body {
 @media screen and (max-width: 480px) {
   /* Your styles for small phones here */
   .h15vh {
-    height: 250vh;
+    height: 200vh;
   }
 }
