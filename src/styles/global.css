@@ -18,6 +18,16 @@
     "cv09", /* Flat-top three */
     "cv02" 1; /* Open 4 */
 }
+
+:root {
+  --bg-tan: #CB997E;
+  --color-2: #DDBEA9;
+  --color-3: #FFE8D6;
+  --color-4: #B7B7A4;
+  --color-5: #A5A58D;
+  --color-6: #6B705C;
+}
+
 @supports (font-variation-settings: normal) {
   /* Use variable font if supported */
   :root {
@@ -42,3 +52,7 @@ background-image: radial-gradient(circle at center center, transparent 0%,rgba(2
 /*.splide__pagination {
   visibility: hidden;
 }*/
+
+.bg-black {
+  background: CB997E!important;
+}
