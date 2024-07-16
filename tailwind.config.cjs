@@ -65,14 +65,14 @@ animation: {
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
-display: ["Basement", ...defaultTheme.fontFamily.sans],
+        display: ["Basement", ...defaultTheme.fontFamily.sans],
       },
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
 
-       require('@tailwindcss/forms'),
+    require('@tailwindcss/forms'),
     // ...
   ],
 }
