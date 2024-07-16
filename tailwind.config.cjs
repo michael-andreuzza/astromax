@@ -64,7 +64,7 @@ animation: {
       },
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
-display: ["Basement", ...defaultTheme.fontFamily.sans],
+        display: ["Basement", ...defaultTheme.fontFamily.sans],
       },
     },
   },
