@@ -56,9 +56,9 @@ animation: {
     extend: {
       colors: {
         black:"#1e1e1e",
-        white:"#e7e7d8",
-        eagle:"#afac95",
-        carrot:"#ea4125",
+        white:"#F4F3EE",
+        eagle:"#BCB8B1",
+        carrot:"#E0FF70",
 
 
       },
@@ -71,7 +71,7 @@ display: ["Basement", ...defaultTheme.fontFamily.sans],
   plugins: [
     require('@tailwindcss/typography'),
 
-       require('@tailwindcss/forms'),
+    require('@tailwindcss/forms'),
     // ...
   ],
 }
