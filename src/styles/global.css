@@ -1,22 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-/* CSS */
-:root {
-  font-family: Inter, sans-serif;
-  font-feature-settings:
-  "liga" 1,
-  "calt" 1, /* Contextual Alternates */
-  "dlig" 1, /* Discretionary Ligatures */
-  "ss07" 1, /* fSquare punctuation */
-  "ss08" 1, /* Square quotes */
-  "zero" 1, /* Slashed zero */
-  "tnum" 1, /* Tabular numbers */
-    "cv03", /* Open six */
-    "cv04" 1, /* Open nine */
-    "cv01" 1, /* Alternate one */
-    "cv09", /* Flat-top three */
-    "cv02" 1; /* Open 4 */
+@import "tailwindcss";
+@theme  {
+  --color-black: #1e1e1e;
+  --color-white: #e7e7d8;
+  --color-eagle: #afac95;
+  --color-orange: #ea4125;
+}
+.font-display {
+  font-family: Basement, sans-serif;
+  font-weight: 700;
 }
 @supports (font-variation-settings: normal) {
   /* Use variable font if supported */
@@ -34,11 +25,39 @@
   font-style: normal;
   descent-override: 0%;
 }
-.gradient-grid  {
-
-background-image: radial-gradient(circle at center center, transparent 0%,rgba(255,255,255, 0) 99%),repeating-linear-gradient(0deg, rgba(205,205,205, 0.2) 0px, rgba(205,205,205, 0.2) 1px,transparent 1px, transparent 6px),repeating-linear-gradient(90deg, rgba(205,205,205, 0.2) 0px, rgba(205,205,205, 0.2) 1px,transparent 1px, transparent 6px),linear-gradient(90deg, rgba(255,255,255, 0),rgba(255,255,255, 0));
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
-/*.splide__pagination {
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+.gradient-grid {
+  background-image: radial-gradient(
+      circle at center center,
+      transparent 0%,
+      rgba(255, 255, 255, 0) 99%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(205, 205, 205, 0.2) 0px,
+      rgba(205, 205, 205, 0.2) 1px,
+      transparent 1px,
+      transparent 6px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(205, 205, 205, 0.2) 0px,
+      rgba(205, 205, 205, 0.2) 1px,
+      transparent 1px,
+      transparent 6px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+/* .splide__pagination {
   visibility: hidden;
-}*/
+} */
