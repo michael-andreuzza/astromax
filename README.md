@@ -3,6 +3,8 @@
 ## License
 
 This template is open-source software licensed under the [GPL-3.0 license](https://opensource.org/licenses/GPL-3.0). Feel free to fork, modify, and use it in your projects.
+## Before using this template publicly, please ensure you remove my name and any links associated with me from the website.
+
 ## This template is using Tailwind CSS V4
 
 Now we are using only a CSS file. It's called `global.css` and it's located in the src/styles folder. Now we are eimporting Tailwind CSS on the same file instead of using the `tailwind.config.cjs` file. Like this:
