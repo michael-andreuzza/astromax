@@ -1,266 +1,208 @@
-<section class="border-b border-white/20  bg-accent-500">
-  <div class="mx-auto max-w-7xl border-x border-white/20  px-8 py-12 gradient-grid">
-    <div class="mx-auto">
-      <h3 class="text-3xl font-display text-white uppercase">
-        Designed and developed websites at AstroMax
-      </h3>
+---
+import BgGrid from "@/components/assets/BgGrid.astro";
+import { Image } from "astro:assets";
+import Trendspotter from "@/images/work/trendspotter.png";
+import Navy from "@/images/work/navy.png";
+import Spaziobianco from "@/images/work/spaziobianco.png";
+import Phanatik from "@/images/work/phanatik.png";
+import Studiomax from "@/images/work/studiomax.png";
+import ProfolioxLight from "@/images/work/profolioxLight.png";
+import ProfolioxDark from "@/images/work/profolioxDark.png";
+import Outkast from "@/images/work/outkast.png";
+import Author from "@/images/work/author.png";
+import PrimapersonaLight from "@/images/work/primapersonaLight.png";
+import PrimapersonaDark from "@/images/work/primapersonaDark.png";
+import SimplexityLight from "@/images/work/simplexityLight.png";
+import SimplexityDark from "@/images/work/simplexityDark.png";
+import Carbon from "@/images/work/carbon.png";
+import Williamsburg from "@/images/work/williamsburg.png";
+import KoteiLight from "@/images/work/koteiLight.png";
+import KoteiDark from "@/images/work/koteiDark.png";
+import Dusk from "@/images/work/dusk.png";
+import Quartiere from "@/images/work/quartiere.png";
+import Flabbergasted from "@/images/work/flabbergasted.png";
+import Aubergine from "@/images/work/aubergine.png";
+import FlacoLight from "@/images/work/flacoLight.png";
+import FlacoDark from "@/images/work/flacoDark.png";
+import Buio from "@/images/work/buio.png";
+import Alfred from "@/images/work/alfred.png";
+import Hemingway from "@/images/work/hemingway.png";
+import StreamerLight from "@/images/work/streamerLight.png";
+import StreamerDark from "@/images/work/streamerDark.png";
+import Vanta from "@/images/work/vanta.png";
+import Semplice from "@/images/work/semplice.png";
+import Riflesso from "@/images/work/riflesso.png";
+import Carriera from "@/images/work/carriera.png";
+import Brightlight from "@/images/work/brightlight.png";
+import Hirewise from "@/images/work/hirewise.png";
+import Snowpeak from "@/images/work/snowpeak.png";
+import Enlightr from "@/images/work/enlightr.png";
+import Superstore from "@/images/work/superstore.png";
+const themes = [
+  { name: "Trendspotter", image: Trendspotter },
+  { name: "Spaziobianco", image: Spaziobianco },
+  { name: "Phanatik", image: Phanatik },
+  { name: "Studiomax", image: Studiomax },
+  { name: "ProfolioxLight", image: ProfolioxLight },
+  { name: "ProfolioxDark", image: ProfolioxDark },
+  { name: "Outkast", image: Outkast },
+  { name: "Author", image: Author },
+  { name: "PrimapersonaLight", image: PrimapersonaLight },
+  { name: "PrimapersonaDark", image: PrimapersonaDark },
+  { name: "SimplexityLight", image: SimplexityLight },
+  { name: "SimplexityDark", image: SimplexityDark },
+  { name: "Carbon", image: Carbon },
+  { name: "Williamsburg", image: Williamsburg },
+  { name: "KoteiLight", image: KoteiLight },
+  { name: "KoteiDark", image: KoteiDark },
+  { name: "Dusk", image: Dusk },
+  { name: "Quartiere", image: Quartiere },
+  { name: "Flabbergasted", image: Flabbergasted },
+  { name: "Aubergine", image: Aubergine },
+  { name: "FlacoLight", image: FlacoLight },
+  { name: "FlacoDark", image: FlacoDark },
+  { name: "Buio", image: Buio },
+  { name: "Alfred", image: Alfred },
+  { name: "Hemingway", image: Hemingway },
+  { name: "StreamerLight", image: StreamerLight },
+  { name: "StreamerDark", image: StreamerDark },
+  { name: "Vanta", image: Vanta },
+  { name: "Semplice", image: Semplice },
+  { name: "Riflesso", image: Riflesso },
+  { name: "Carriera", image: Carriera },
+  { name: "Brightlight", image: Brightlight },
+  { name: "Hirewise", image: Hirewise },
+  { name: "Snowpeak", image: Snowpeak },
+  { name: "Enlightr", image: Enlightr },
+  { name: "Superstore", image: Superstore },
+  { name: "Navy", image: Navy },
+];
+---
+
+<style>
+  .keen-slider__slide {
+    overflow: visible;
+  }
+</style>
+<section class="border-b border-white/20 divide-y divide-white/20">
+  <div class="px-8 py-6 relative">
+    <BgGrid />
+    <h2 class="text-3xl font-black text-white uppercase">
+      Designed and developed websites at AstroMax
+    </h2>
+  </div>
+  <div class="relative">
+    <div
+      class="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-2 pointer-events-none z-10"
+    >
+      <button
+        id="keen-slider-previous"
+        aria-label="Previous slide"
+        class="pointer-events-auto p-2 size-8 bg-white/80 hover:bg-white text-black rounded-full shadow transition"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 256 256"
+          ><path
+            d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"
+          ></path></svg
+        >
+      </button>
+      <button
+        id="keen-slider-next"
+        aria-label="Next slide"
+        class="pointer-events-auto p-2 size-8 bg-white hover:bg-white text-black rounded-full shadow transition"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 256 256"
+          ><path
+            d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+          ></path></svg
+        >
+      </button>
+    </div>
+    <div id="keen-slider" class="keen-slider relative">
+      {
+        themes.map(({ name, image }) => (
+          <div class="relative w-full keen-slider__slide  ">
+            <Image src={image} width={800} height={800} alt={name} />
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>
-<section class="border-b border-white/20  bg-accent-500">
-  <div
-    class="mx-auto max-w-7xl border-white/20  border-x"
-    x-data="{ init() {
-            new Splide(this.$refs.splide, {
-
-                perPage: 5,
-                gap: '0rem',
-                breakpoints: {
-                    640: {
-                        perPage: 1,
-                    },
-                },
-
-            }).mount()
+<script type="module">
+  import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
+  window.addEventListener("DOMContentLoaded", () => {
+    const autoplay = (slider) => {
+      let timeout;
+      let mouseOver = false;
+      function clearNextTimeout() {
+        clearTimeout(timeout);
+      }
+      function nextTimeout() {
+        clearTimeout(timeout);
+        if (mouseOver) return;
+        timeout = setTimeout(() => {
+          slider.next();
+        }, 500);
+      }
+      slider.on("created", () => {
+        slider.container.addEventListener("mouseover", () => {
+          mouseOver = true;
+          clearNextTimeout();
+        });
+        slider.container.addEventListener("mouseout", () => {
+          mouseOver = false;
+          nextTimeout();
+        });
+        nextTimeout();
+      });
+      slider.on("dragStarted", clearNextTimeout);
+      slider.on("animationEnded", nextTimeout);
+      slider.on("updated", nextTimeout);
+    };
+    const sliderEl = document.getElementById("keen-slider");
+    if (!sliderEl) {
+      console.warn("Slider element not found");
+      return;
+    }
+    const keenSlider = new KeenSlider(
+      sliderEl,
+      {
+        loop: true,
+        defaultAnimation: {
+          duration: 1000,
         },
-    }">
-    <section
-      class="splide is-initialized splide--slide splide--ltr splide--draggable is-active"
-      aria-label="Splide/Alpine.js"
-      x-ref="splide"
-      id="splide01"
-      aria-roledescription="carousel">
-      <div class="splide__arrows splide__arrows--ltr items-center">
-        <button
-          class="splide__arrow splide__arrow--prev"
-          type="button"
-          aria-label="Previous slide"
-          aria-controls="splide01-track"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 40 40"
-            width="40"
-            height="40"
-            focusable="false"
-            ><path
-              d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
-            ></path></svg
-          ></button
-        >
-        <button
-          class="splide__arrow splide__arrow--next"
-          type="button"
-          disabled=""
-          aria-label="Next slide"
-          aria-controls="splide01-track"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 40 40"
-            width="40"
-            height="40"
-            focusable="false"
-            ><path
-              d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
-            ></path></svg
-          ></button
-        >
-      </div>
-      <div
-        class="h-full splide__track splide__track--slide splide__track--ltr splide__track--draggable"
-        id="splide01-track"
-        style="padding-left: 0px; padding-right: 0px;"
-        aria-live="polite"
-        aria-atomic="true"
-        aria-busy="false">
-        <ul
-          class="splide__list"
-          id="splide01-list"
-          role="presentation"
-          style="transform: translateX(-2040px);">
-          <li
-            class="flex justify-center flex-col splide__slide is-prev"
-            id="splide01-slide03"
-            role="tabpanel"
-            aria-roledescription="slide"
-            aria-label="3 of 4"
-            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
-            aria-hidden="true">
-            <img
-              alt="work"
-              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              src="/work/1.png"
-            />
-            <div
-              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white/20 ">
-              <span class="block font-semibold">Project 1</span>
-            </div>
-          </li>
-          <li
-            class="flex justify-center flex-col splide__slide"
-            id="splide01-slide01"
-            role="tabpanel"
-            aria-roledescription="slide"
-            aria-label="1 of 4"
-            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
-            aria-hidden="true">
-            <img
-              alt="work"
-              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              src="/work/2.png"
-            />
-            <div
-              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white/20 ">
-              <span class="block font-semibold">Project 2</span>
-            </div>
-          </li>
-          <li
-            class="flex justify-center flex-col splide__slide is-prev"
-            id="splide01-slide03"
-            role="tabpanel"
-            aria-roledescription="slide"
-            aria-label="3 of 4"
-            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
-            aria-hidden="true">
-            <img
-              alt="work"
-              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              src="/work/3.png"
-            />
-            <div
-              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white/20 ">
-              <span class="block font-semibold">Project 3</span>
-            </div>
-          </li>
-          <li
-            class="flex justify-center flex-col splide__slide is-prev"
-            id="splide01-slide03"
-            role="tabpanel"
-            aria-roledescription="slide"
-            aria-label="3 of 4"
-            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
-            aria-hidden="true">
-            <img
-              alt="work"
-              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              src="/work/4.png"
-            />
-            <div
-              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white/20 ">
-              <span class="block font-semibold">Project 4</span>
-            </div>
-          </li>
-
-          <li
-            class="flex justify-center flex-col splide__slide"
-            id="splide01-slide02"
-            role="tabpanel"
-            aria-roledescription="slide"
-            aria-label="2 of 4"
-            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
-            aria-hidden="true">
-            <img
-              alt="work"
-              class="w-full object-cover object-center bg-white border-t border-black"
-              src="/work/5.png"
-            />
-            <div
-              class="text-white text-xs order-first p-3 text-center lg:border-black">
-              <span class="block font-semibold">Project 5</span>
-            </div>
-          </li>
-
-          <li
-            class="flex justify-center flex-col splide__slide"
-            id="splide01-slide02"
-            role="tabpanel"
-            aria-roledescription="slide"
-            aria-label="2 of 4"
-            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
-            aria-hidden="true">
-            <img
-              alt="work"
-              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              src="/work/6.png"
-            />
-            <div
-              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white/20 ">
-              <span class="block font-semibold">Project 6</span>
-            </div>
-          </li>
-          <li
-            class="flex justify-center flex-col splide__slide"
-            id="splide01-slide02"
-            role="tabpanel"
-            aria-roledescription="slide"
-            aria-label="2 of 4"
-            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
-            aria-hidden="true">
-            <img
-              alt="work"
-              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              src="/work/7.png"
-            />
-            <div
-              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white/20 ">
-              <span class="block font-semibold">Project 7</span>
-            </div>
-          </li>
-          <li
-            class="flex justify-center flex-col splide__slide"
-            id="splide01-slide02"
-            role="tabpanel"
-            aria-roledescription="slide"
-            aria-label="2 of 4"
-            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
-            aria-hidden="true">
-            <img
-              alt="work"
-              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              src="/work/8.png"
-            />
-            <div
-              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white/20 ">
-              <span class="block font-semibold">Project 8</span>
-            </div>
-          </li>
-          <li
-            class="flex justify-center flex-col splide__slide"
-            id="splide01-slide02"
-            role="tabpanel"
-            aria-roledescription="slide"
-            aria-label="2 of 4"
-            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
-            aria-hidden="true">
-            <img
-              alt="work"
-              class="w-full object-cover object-center bg-white border-t border-black lg:border-r"
-              src="/work/9.png"
-            />
-            <div
-              class="text-white text-xs order-first p-3 text-center lg:border-r lg:border-white/20 ">
-              <span class="block font-semibold">Project 9</span>
-            </div>
-          </li>
-          <li
-            class="flex justify-center flex-col splide__slide"
-            id="splide01-slide02"
-            role="tabpanel"
-            aria-roledescription="slide"
-            aria-label="2 of 4"
-            style="margin-right: 0.5rem; width: calc(((100% + 0.5rem) / 1) - 0.5rem);"
-            aria-hidden="true">
-            <img
-              alt="work"
-              class="w-full object-cover object-center bg-white border-t border-black"
-              src="/work/10.png"
-            />
-            <div
-              class="text-white text-xs order-first p-3 text-center lg:border-black">
-              <span class="block font-semibold">Project 10</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </div>
-</section>
+        detailsChanged: (s) => {
+          s.slides.forEach((element, idx) => {
+            element.style.opacity = s.track.details.slides[idx].portion;
+          });
+        },
+        slides: {
+          origin: "center",
+          perView: 2.2,
+          spacing: 12,
+        },
+        breakpoints: {
+          "(min-width: 1024px)": {
+            slides: {
+              origin: "center",
+              perView: 3.5,
+              spacing: 0,
+            },
+          },
+        },
+      },
+      [autoplay]
+    );
+    const keenSliderPrevious = document.getElementById("keen-slider-previous");
+    const keenSliderNext = document.getElementById("keen-slider-next");
+    keenSliderPrevious?.addEventListener("click", () => keenSlider.prev());
+    keenSliderNext?.addEventListener("click", () => keenSlider.next());
+  });
+</script>

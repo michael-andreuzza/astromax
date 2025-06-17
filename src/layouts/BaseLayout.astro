@@ -4,11 +4,13 @@ import Navigation from "@/components/global/Navigation.astro";
 import Footer from "@/components/global/Footer.astro";
 ---
 
-<html lang="en" class="selection:bg-orange  selection:text-white">
+<html lang="en" class="selection:bg-orange selection:text-white">
   <head>
     <BaseHead />
   </head>
-  <body class="mx-auto bg-black 2xl:max-w-7xl">
+  <body
+    class="mx-auto bg-black max-w-7xl border-x border-white/20 2xl:max-w-7xl"
+  >
     <Navigation />
     <slot />
     <Footer />

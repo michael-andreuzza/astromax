@@ -1,63 +1,36 @@
 @import "tailwindcss";
 @theme  {
+  --font-sans: Geist, sans-serif;
+  --font-mono: Geist mono, monospace;
   --color-black: #1e1e1e;
   --color-white: #e7e7d8;
   --color-eagle: #afac95;
   --color-orange: #ea4125;
-}
-.font-display {
-  font-family: Basement, sans-serif;
-  font-weight: 700;
-}
-@supports (font-variation-settings: normal) {
-  /* Use variable font if supported */
-  :root {
-    font-family: InterVariable, sans-serif;
+  /* Gradient */
+--background-image-grid:
+  repeating-linear-gradient(
+    to right,
+    rgba(205, 205, 205, 0.2) 0px,
+    rgba(205, 205, 205, 0.2) 1px,
+    transparent 1px,
+    transparent 6px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    rgba(205, 205, 205, 0.2) 0px,
+    rgba(205, 205, 205, 0.2) 1px,
+    transparent 1px,
+    transparent 6px
+  );
+
+  /* Keyframes */
+  --animate-marquee: marquee 50s linear infinite;
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }
-@font-face {
-  font-family: "Basement";
-  src: url("../fonts/BSBlack.eot");
-  src: url("../fonts/BSBlack.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/BSBlack.woff2") format("woff2"),
-    url("../fonts/BSBlack.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  descent-override: 0%;
-}
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.animate-marquee {
-  animation: marquee 15s linear infinite;
-}
-.gradient-grid {
-  background-image: radial-gradient(
-      circle at center center,
-      transparent 0%,
-      rgba(255, 255, 255, 0) 99%
-    ),
-    repeating-linear-gradient(
-      0deg,
-      rgba(205, 205, 205, 0.2) 0px,
-      rgba(205, 205, 205, 0.2) 1px,
-      transparent 1px,
-      transparent 6px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      rgba(205, 205, 205, 0.2) 0px,
-      rgba(205, 205, 205, 0.2) 1px,
-      transparent 1px,
-      transparent 6px
-    ),
-    linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-}
-/* .splide__pagination {
-  visibility: hidden;
-} */

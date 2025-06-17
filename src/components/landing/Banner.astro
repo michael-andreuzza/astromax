@@ -1,26 +1,50 @@
+---
+const messages = [
+  "spots open",
+  "now booking",
+  "limited space",
+  "get in touch",
+  "new project?",
+  "join the queue",
+  "let’s build",
+  "design magic",
+  "front-end love",
+  "available",
+];
+const marqueeItems = [...messages, ...messages]; // Duplicate for seamless loop
+---
+
 <section class="border-white/20 border-y">
-  <div class="text-white mx-auto">
-    <div class="mx-auto overflow-hidden overflow-x-hidden py-2 relative">
-      <div class="w-full justify-between grid">
-        <div
-          class="absolute from-black inset-0 left-0 via-transparent w-44 z-10 bg-gradient-to-r">
-        </div>
-        <div
-          class="absolute from-black inset-0 left-0 via-transparent w-44 z-10 bg-gradient-to-l ml-auto">
-        </div>
+  <div class=" overflow-hidden py-2 relative text-white">
+    <!-- Edge gradient overlays -->
+    <div
+      aria-hidden="true"
+      class="absolute inset-0 z-10 pointer-events-none sr-only"
+    >
+      <div
+        class="absolute left-0 w-24 h-full bg-gradient-to-r from-black via-transparent"
+      >
       </div>
       <div
-        class="flex items-center animate-marquee font-black font-display gap-4 relative tracking-widest uppercase whitespace-nowrap">
-        spots open <span class="hidden lg:inline">✺</span> spots open <span
-          class="hidden lg:inline">✺</span
-        > spots open <span class="hidden lg:inline">✺</span> spots open <span
-          class="hidden lg:inline">✺</span
-        > spots open <span class="hidden lg:inline">✺</span> spots open <span
-          class="hidden lg:inline">✺</span
-        > spots open <span class="hidden lg:inline">✺</span> spots open <span
-          class="hidden lg:inline">✺</span
-        > spots open <span class="hidden lg:inline">✺</span>
+        class="absolute right-0 w-24 h-full bg-gradient-to-l from-black via-transparent"
+      >
       </div>
+    </div>
+
+    <!-- Marquee content -->
+    <div
+      class="flex w-max animate-marquee gap-6 whitespace-nowrap font-black tracking-widest uppercase"
+    >
+      {
+        marqueeItems.map((msg, index) => (
+          <>
+            <span>{msg}</span>
+            {index !== marqueeItems.length - 1 && (
+              <span aria-hidden="true">✺</span>
+            )}
+          </>
+        ))
+      }
     </div>
   </div>
 </section>
