@@ -127,8 +127,8 @@ const themes = [
     <div id="keen-slider" class="keen-slider relative">
       {
         themes.map(({ name, image }) => (
-          <div class="relative w-full keen-slider__slide  ">
-            <Image src={image} width={800} height={800} alt={name} />
+          <div class="relative w-full keen-slider__slide ">
+            <Image src={image} width={800} height={800} alt={name} class="aspect-auto" />
           </div>
         ))
       }
