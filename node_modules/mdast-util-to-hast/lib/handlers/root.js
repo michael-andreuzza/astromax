@@ -1,12 +1,8 @@
 /**
- * @typedef {import('hast').Parents} HastParents
- * @typedef {import('hast').Root} HastRoot
- * @typedef {import('mdast').Root} MdastRoot
- * @typedef {import('../state.js').State} State
+ * @import {Parents as HastParents, Root as HastRoot} from 'hast'
+ * @import {Root as MdastRoot} from 'mdast'
+ * @import {State} from '../state.js'
  */
-
-// Make VS Code show references to the above types.
-''
 
 /**
  * Turn an mdast `root` node into hast.

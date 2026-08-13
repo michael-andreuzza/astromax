@@ -1,11 +1,8 @@
 /**
- * @typedef {import('hast').Element} Element
- * @typedef {import('mdast').Blockquote} Blockquote
- * @typedef {import('../state.js').State} State
+ * @import {Element} from 'hast'
+ * @import {Blockquote} from 'mdast'
+ * @import {State} from '../state.js'
  */
-
-// Make VS Code show references to the above types.
-''
 
 /**
  * Turn an mdast `blockquote` node into hast.

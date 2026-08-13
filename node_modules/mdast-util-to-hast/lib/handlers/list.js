@@ -1,12 +1,8 @@
 /**
- * @typedef {import('hast').Element} Element
- * @typedef {import('hast').Properties} Properties
- * @typedef {import('mdast').List} List
- * @typedef {import('../state.js').State} State
+ * @import {Element, Properties} from 'hast'
+ * @import {List} from 'mdast'
+ * @import {State} from '../state.js'
  */
-
-// Make VS Code show references to the above types.
-''
 
 /**
  * Turn an mdast `list` node into hast.

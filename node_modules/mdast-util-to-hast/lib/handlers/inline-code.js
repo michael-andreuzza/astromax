@@ -1,12 +1,8 @@
 /**
- * @typedef {import('hast').Element} Element
- * @typedef {import('hast').Text} Text
- * @typedef {import('mdast').InlineCode} InlineCode
- * @typedef {import('../state.js').State} State
+ * @import {Element, Text} from 'hast'
+ * @import {InlineCode} from 'mdast'
+ * @import {State} from '../state.js'
  */
-
-// Make VS Code show references to the above types.
-''
 
 /**
  * Turn an mdast `inlineCode` node into hast.

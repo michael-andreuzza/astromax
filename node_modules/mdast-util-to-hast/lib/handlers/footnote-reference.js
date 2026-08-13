@@ -1,7 +1,7 @@
 /**
- * @typedef {import('hast').Element} Element
- * @typedef {import('mdast').FootnoteReference} FootnoteReference
- * @typedef {import('../state.js').State} State
+ * @import {Element} from 'hast'
+ * @import {FootnoteReference} from 'mdast'
+ * @import {State} from '../state.js'
  */
 
 import {normalizeUri} from 'micromark-util-sanitize-uri'

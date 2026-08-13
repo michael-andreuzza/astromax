@@ -1,10 +1,8 @@
-import { n as __reExport, t as __exportAll } from "./chunk-CtajNgzt.mjs";
+import "./rolldown-runtime-BBjsoOtd.mjs";
 import { t as engine_oniguruma_exports } from "./engine-oniguruma.mjs";
 import { bundledThemes, bundledThemesInfo } from "./themes.mjs";
 import { createBundledHighlighter, createSingletonShorthands, guessEmbeddedLanguages } from "@shikijs/core";
-
-export * from "@shikijs/core"
-
+export * from "@shikijs/core";
 //#region src/langs-bundle-web.ts
 const bundledLanguagesInfo = [
 	{
@@ -238,6 +236,11 @@ const bundledLanguagesInfo = [
 		"import": (() => import("@shikijs/langs/shellscript"))
 	},
 	{
+		"id": "smithy",
+		"name": "Smithy",
+		"import": (() => import("@shikijs/langs/smithy"))
+	},
+	{
 		"id": "sql",
 		"name": "SQL",
 		"import": (() => import("@shikijs/langs/sql"))
@@ -322,25 +325,8 @@ const bundledLanguages = {
 	...bundledLanguagesBase,
 	...bundledLanguagesAlias
 };
-
 //#endregion
 //#region src/bundle-web.ts
-var bundle_web_exports = /* @__PURE__ */ __exportAll({
-	bundledLanguages: () => bundledLanguages,
-	bundledLanguagesAlias: () => bundledLanguagesAlias,
-	bundledLanguagesBase: () => bundledLanguagesBase,
-	bundledLanguagesInfo: () => bundledLanguagesInfo,
-	bundledThemes: () => bundledThemes,
-	bundledThemesInfo: () => bundledThemesInfo,
-	codeToHast: () => codeToHast,
-	codeToHtml: () => codeToHtml,
-	codeToTokens: () => codeToTokens,
-	codeToTokensBase: () => codeToTokensBase,
-	codeToTokensWithThemes: () => codeToTokensWithThemes,
-	createHighlighter: () => createHighlighter,
-	getLastGrammarState: () => getLastGrammarState,
-	getSingletonHighlighter: () => getSingletonHighlighter
-});
 /**
 * Initiate a highlighter instance and load the specified languages and themes.
 * Later it can be used synchronously to highlight code.
@@ -357,6 +343,5 @@ const createHighlighter = /* @__PURE__ */ createBundledHighlighter({
 	engine: () => (0, engine_oniguruma_exports.createOnigurumaEngine)(import("shiki/wasm"))
 });
 const { codeToHtml, codeToHast, codeToTokensBase, codeToTokens, codeToTokensWithThemes, getSingletonHighlighter, getLastGrammarState } = /* @__PURE__ */ createSingletonShorthands(createHighlighter, { guessEmbeddedLanguages });
-
 //#endregion
 export { bundledLanguages, bundledLanguagesAlias, bundledLanguagesBase, bundledLanguagesInfo, bundledThemes, bundledThemesInfo, codeToHast, codeToHtml, codeToTokens, codeToTokensBase, codeToTokensWithThemes, createHighlighter, getLastGrammarState, getSingletonHighlighter };

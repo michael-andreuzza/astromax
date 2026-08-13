@@ -1,7 +1,7 @@
 /**
- * @typedef {import('hast').Element} Element
- * @typedef {import('mdast').Table} Table
- * @typedef {import('../state.js').State} State
+ * @import {Table} from 'mdast'
+ * @import {Element} from 'hast'
+ * @import {State} from '../state.js'
  */
 
 import {pointEnd, pointStart} from 'unist-util-position'

@@ -1,11 +1,8 @@
 /**
- * @typedef {import('hast').Element} Element
- * @typedef {import('mdast').ThematicBreak} ThematicBreak
- * @typedef {import('../state.js').State} State
+ * @import {Element} from 'hast'
+ * @import {ThematicBreak} from 'mdast'
+ * @import {State} from '../state.js'
  */
-
-// Make VS Code show references to the above types.
-''
 
 /**
  * Turn an mdast `thematicBreak` node into hast.

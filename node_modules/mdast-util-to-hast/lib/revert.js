@@ -1,14 +1,8 @@
 /**
- * @typedef {import('hast').ElementContent} ElementContent
- *
- * @typedef {import('mdast').Nodes} Nodes
- * @typedef {import('mdast').Reference} Reference
- *
- * @typedef {import('./state.js').State} State
+ * @import {ElementContent} from 'hast'
+ * @import {Reference, Nodes} from 'mdast'
+ * @import {State} from './state.js'
  */
-
-// Make VS Code show references to the above types.
-''
 
 /**
  * Return the content of a reference without definition as plain text.

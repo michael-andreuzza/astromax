@@ -1,3 +1,7 @@
+/**
+ * @import {Handlers} from '../state.js'
+ */
+
 import {blockquote} from './blockquote.js'
 import {hardBreak} from './break.js'
 import {code} from './code.js'
@@ -25,7 +29,7 @@ import {thematicBreak} from './thematic-break.js'
 /**
  * Default handlers for nodes.
  *
- * @satisfies {import('../state.js').Handlers}
+ * @satisfies {Handlers}
  */
 export const handlers = {
   blockquote,

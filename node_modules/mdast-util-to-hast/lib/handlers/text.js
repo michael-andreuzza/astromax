@@ -1,8 +1,7 @@
 /**
- * @typedef {import('hast').Element} HastElement
- * @typedef {import('hast').Text} HastText
- * @typedef {import('mdast').Text} MdastText
- * @typedef {import('../state.js').State} State
+ * @import {Element as HastElement, Text as HastText} from 'hast'
+ * @import {Text as MdastText} from 'mdast'
+ * @import {State} from '../state.js'
  */
 
 import {trimLines} from 'trim-lines'

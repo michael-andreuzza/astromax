@@ -1,14 +1,8 @@
 /**
- * @typedef {import('hast').Element} Element
- * @typedef {import('hast').ElementContent} ElementContent
- * @typedef {import('hast').Properties} Properties
- * @typedef {import('mdast').Parents} Parents
- * @typedef {import('mdast').TableRow} TableRow
- * @typedef {import('../state.js').State} State
+ * @import {Element, ElementContent, Properties} from 'hast'
+ * @import {Parents, TableRow} from 'mdast'
+ * @import {State} from '../state.js'
  */
-
-// Make VS Code show references to the above types.
-''
 
 /**
  * Turn an mdast `tableRow` node into hast.

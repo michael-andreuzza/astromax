@@ -1,8 +1,6 @@
 /**
- * @typedef {import('hast').Element} Element
- * @typedef {import('hast').ElementContent} ElementContent
- *
- * @typedef {import('./state.js').State} State
+ * @import {ElementContent, Element} from 'hast'
+ * @import {State} from './state.js'
  */
 
 /**

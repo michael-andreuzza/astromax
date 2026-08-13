@@ -1,20 +1,23 @@
 /**
- * @typedef {import('hast').Element} HastElement
- * @typedef {import('hast').ElementContent} HastElementContent
- * @typedef {import('hast').Nodes} HastNodes
- * @typedef {import('hast').Properties} HastProperties
- * @typedef {import('hast').RootContent} HastRootContent
- * @typedef {import('hast').Text} HastText
- *
- * @typedef {import('mdast').Definition} MdastDefinition
- * @typedef {import('mdast').FootnoteDefinition} MdastFootnoteDefinition
- * @typedef {import('mdast').Nodes} MdastNodes
- * @typedef {import('mdast').Parents} MdastParents
- *
- * @typedef {import('vfile').VFile} VFile
- *
- * @typedef {import('./footer.js').FootnoteBackContentTemplate} FootnoteBackContentTemplate
- * @typedef {import('./footer.js').FootnoteBackLabelTemplate} FootnoteBackLabelTemplate
+ * @import {
+ *   ElementContent as HastElementContent,
+ *   Element as HastElement,
+ *   Nodes as HastNodes,
+ *   Properties as HastProperties,
+ *   RootContent as HastRootContent,
+ *   Text as HastText
+ * } from 'hast'
+ * @import {
+ *   Definition as MdastDefinition,
+ *   FootnoteDefinition as MdastFootnoteDefinition,
+ *   Nodes as MdastNodes,
+ *   Parents as MdastParents
+ * } from 'mdast'
+ * @import {VFile} from 'vfile'
+ * @import {
+ *   FootnoteBackContentTemplate,
+ *   FootnoteBackLabelTemplate
+ * } from './footer.js'
  */
 
 /**

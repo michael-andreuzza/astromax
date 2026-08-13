@@ -27,7 +27,7 @@ This option does not filter the report output, it simply changes the command's f
 
 ### Package lock
 
-By default npm requires a package-lock or shrinkwrap in order to run the audit.
+By default npm requires a package-lock in order to run the audit.
 You can bypass the package lock with `--no-package-lock` but be aware the results may be different with every run, since npm will re-build the dependency tree each time.
 
 ### Audit Signatures
@@ -43,6 +43,16 @@ $ npm audit signatures
 The `audit signatures` command will also verify the provenance attestations of downloaded packages.
 Because provenance attestations are such a new feature, security features may be added to (or changed in) the attestation format over time.
 To ensure that you're always able to verify attestation signatures check that you're running the latest version of the npm CLI. Please note this often means updating npm beyond the version that ships with Node.js.
+
+To include the full sigstore attestation bundles in JSON output, use:
+
+```bash
+$ npm audit signatures --json --include-attestations
+```
+
+This adds a `verified` array to the JSON output containing the attestation
+bundles (DSSE envelopes, verification material, and transparency log entries)
+for each verified package.
 
 The npm CLI supports registry signatures and signing keys provided by any registry if the following conventions are followed:
 
@@ -303,8 +313,7 @@ will also prevent _writing_ `package-lock.json` if `save` is true.
 Dependency types to omit from the installation tree on disk.
 
 Note that these dependencies _are_ still resolved and added to the
-`package-lock.json` or `npm-shrinkwrap.json` file. They are just not
-physically installed on disk.
+`package-lock.json` file. They are just not physically installed on disk.
 
 If a package type appears in both the `--include` and `--omit` lists, then
 it will be included.
@@ -354,6 +363,21 @@ Note that commands explicitly intended to run a particular script, such as
 `npm start`, `npm stop`, `npm restart`, `npm test`, and `npm run` will still
 run their intended script if `ignore-scripts` is set, but they will *not*
 run any pre- or post-scripts.
+
+Setting `ignore-scripts` also disables `.npm-extension` execution, as if
+`ignore-extension` were set.
+
+
+
+#### `include-attestations`
+
+* Default: false
+* Type: Boolean
+
+When used with `npm audit signatures --json`, includes the full sigstore
+attestation bundles in the JSON output for each verified package. The
+bundles contain DSSE envelopes, verification material, and transparency log
+entries.
 
 
 

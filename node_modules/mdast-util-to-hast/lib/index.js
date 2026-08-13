@@ -1,7 +1,7 @@
 /**
- * @typedef {import('hast').Nodes} HastNodes
- * @typedef {import('mdast').Nodes} MdastNodes
- * @typedef {import('./state.js').Options} Options
+ * @import {Nodes as HastNodes} from 'hast'
+ * @import {Nodes as MdastNodes} from 'mdast'
+ * @import {Options} from './state.js'
  */
 
 import {ok as assert} from 'devlop'

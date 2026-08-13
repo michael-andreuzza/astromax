@@ -1485,12 +1485,13 @@ types, as that registers the new node type in the tree.
 
 ```js
 /**
- * @typedef {import('mdast-util-to-hast')}
+ * @import {Root} from 'hast'
+ * @import {} from 'mdast-util-to-hast'
  */
 
 import {visit} from 'unist-util-visit'
 
-/** @type {import('hast').Root} */
+/** @type {Root} */
 const tree = { /* … */ }
 
 visit(tree, function (node) {
@@ -1505,12 +1506,13 @@ somewhere in your types, as that registers the data fields in the tree.
 
 ```js
 /**
- * @typedef {import('mdast-util-to-hast')}
+ * @import {Root} from 'hast'
+ * @import {} from 'mdast-util-to-hast'
  */
 
 import {visit} from 'unist-util-visit'
 
-/** @type {import('hast').Root} */
+/** @type {Root} */
 const tree = { /* … */ }
 
 console.log(tree.data?.hName) // Types as `string | undefined`.

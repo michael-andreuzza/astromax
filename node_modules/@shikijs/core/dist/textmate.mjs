@@ -1,3 +1,2 @@
-export * from "@shikijs/vscode-textmate"
-
-export {  };
+export * from "@shikijs/vscode-textmate";
+export {};

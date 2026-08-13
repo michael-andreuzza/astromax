@@ -1,9 +1,7 @@
 /**
- * @typedef {import('hast').Element} Element
- * @typedef {import('hast').ElementContent} ElementContent
- * @typedef {import('hast').Properties} Properties
- * @typedef {import('mdast').ImageReference} ImageReference
- * @typedef {import('../state.js').State} State
+ * @import {ElementContent, Element, Properties} from 'hast'
+ * @import {ImageReference} from 'mdast'
+ * @import {State} from '../state.js'
  */
 
 import {normalizeUri} from 'micromark-util-sanitize-uri'

@@ -1,3 +1,2 @@
-export * from "@shikijs/engine-javascript"
-
-export {  };
+export * from "@shikijs/engine-javascript";
+export {};

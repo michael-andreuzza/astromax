@@ -1,12 +1,9 @@
 /**
- * @typedef {import('hast').Element} Element
- * @typedef {import('mdast').Html} Html
- * @typedef {import('../state.js').State} State
- * @typedef {import('../../index.js').Raw} Raw
+ * @import {Element} from 'hast'
+ * @import {Html} from 'mdast'
+ * @import {State} from '../state.js'
+ * @import {Raw} from '../../index.js'
  */
-
-// Make VS Code show references to the above types.
-''
 
 /**
  * Turn an mdast `html` node into hast (`raw` node in dangerous mode, otherwise

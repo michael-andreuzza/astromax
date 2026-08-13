@@ -1,11 +1,8 @@
 /**
- * @typedef {import('hast').Element} Element
- * @typedef {import('mdast').Strong} Strong
- * @typedef {import('../state.js').State} State
+ * @import {Element} from 'hast'
+ * @import {Strong} from 'mdast'
+ * @import {State} from '../state.js'
  */
-
-// Make VS Code show references to the above types.
-''
 
 /**
  * Turn an mdast `strong` node into hast.
