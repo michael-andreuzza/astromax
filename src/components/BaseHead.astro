@@ -1,15 +1,52 @@
 ---
 import "@/styles/global.css";
+import { AstroSeo } from "@lexingtonthemes/seo";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Your Site Name",
+  url: "https://yoursite.com/",
+  description: "A brief description of your website content.",
+};
 ---
 
+<AstroSeo
+  title="Your Page Title"
+  description="A brief description of your website content."
+  canonical="https://yoursite.com/"
+  openGraph={{
+    url: "https://yoursite.com/",
+    title: "Your Page Title",
+    description: "A brief description of your website content.",
+    images: [
+      {
+        url: "https://yoursite.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Open Graph Image Alt",
+        type: "image/jpeg",
+      },
+    ],
+    site_name: "Your Site Name",
+    type: "website",
+    locale: "en_US",
+  }}
+  twitter={{
+    handle: "@yourhandle",
+    site: "@yoursite",
+    cardType: "summary_large_image",
+  }}
+/>
+
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="author" content="Michael Andreuzza" />
-<meta name="your keywords" content="Add ypour keywords here" />
-<!-- Favicon guidelines generated with https://favicon.io/ -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="author" content="Your Name or Company Name" />
+
+<!-- Favicons -->
 <link
   rel="apple-touch-icon"
   sizes="180x180"
@@ -41,7 +78,6 @@ import "@/styles/global.css";
   href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap"
   rel="stylesheet"
 />
-<!--- Keen Slider -->
 <link
   href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
   rel="stylesheet"
