@@ -6,6 +6,14 @@ import Footer from "@/components/global/Footer.astro";
 
 <html lang="en" class="selection:bg-orange selection:text-white">
   <head>
+    <script is:inline>
+      (function () {
+        if (window.top !== window.self) return;
+        var h = location.hostname;
+        if (h === "localhost" || h === "127.0.0.1") return;
+        location.replace("https://lexingtonthemes.com/viewports/astromax");
+      })();
+    </script>
     <BaseHead />
   </head>
   <body
